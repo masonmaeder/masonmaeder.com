@@ -1,8 +1,130 @@
 <!DOCTYPE html>
 <html>
 
+<head>
+    <title>Mason Maeder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #ffffff;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+            padding-left: 20px;
+        }
+
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(211, 211, 211, 0.1);
+            /* light gray, 50% opacity */
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 300px;
+            margin: 0 auto;
+            position: absolute;
+            top: 50%;
+            left: 33%;
+            transform: translate(-50%, -50%);
+        }
+
+        .profile img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-top: 15px;
+        }
+
+        .profile-details {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-media {
+            margin-top: 20px;
+        }
+
+        .social-media a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .social-media img {
+            width: 32px;
+            height: 32px;
+            filter: invert(100%);
+            border-radius: 0;
+            margin-top: 25px;
+        }
+
+        .source {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            font-size: 0.8em;
+            color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .source a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .source a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
 <body>
-    <p>are you http? because without you i'm NET::ERR_CERT_AUTHORITY_INVALID</p>
+    <div class="profile">
+        <img src="assets/images/me.jpeg" alt="Profile Picture">
+        <div class="profile-details">
+            <h1>Mason Maeder</h1>
+            <p>Enthusiastic third-year student at the University of Wisconsin-Madison with a flair for leadership,
+                customer service, and problem-solving. Actively seeking opportunities to contribute positively and
+                meaningfully.</p>
+            <div class="social-media">
+                <a href="mailto:hello@masonmaeder.com"><img src="assets/social-links/email.svg" alt="Email"></a>
+                <a href="assets/files/Mason Maeder (public).pdf"><img src="assets/social-links/resume.svg"
+                        alt="Resume"></a>
+                <a href="https://www.linkedin.com/in/mason-maeder/"><img src="assets/social-links/linkedin.svg"
+                        alt="LinkedIn"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="source">
+        <p><a href="https://github.com/masonmaeder/masonmaeder.com" target="_blank">Source</a></p>
+        <p><a href="https://www.vantajs.com/" target="_blank">Vanta.js</a></p>
+    </div>
+
+    <script src="js/three.min.js"></script>
+    <script src="js/vanta.globe.min.js"></script>
+    <script>
+        VANTA.GLOBE({
+            el: "body",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x10bbde,
+            color2: 0xffffff,
+            backgroundColor: 0x262526
+        })
+    </script>
 </body>
 
 </html>
