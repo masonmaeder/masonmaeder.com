@@ -135,67 +135,69 @@ export default function ContactContent() {
                   rel="noopener noreferrer"
                   className="text-gray-600 hover:text-accent transition-colors font-medium flex items-center gap-2 group"
                 >
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+                  <span>LinkedIn</span>
+                  <svg
+                    className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
                   >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4m-4-6l6 6m0 0l-6-6m6 6V5"
-                  />
-                </svg>
-              </a>
-              <a
-                href="https://github.com/masonmaeder"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-600 hover:text-accent transition-colors font-medium flex items-center gap-2 group"
-              >
-                <span>GitHub</span>
-                <svg
-                  className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4m-4-6l6 6m0 0l-6-6m6 6V5"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://github.com/masonmaeder"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-accent transition-colors font-medium flex items-center gap-2 group"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4m-4-6l6 6m0 0l-6-6m6 6V5"
-                  />
-                </svg>
-              </a>
+                  <span>GitHub</span>
+                  <svg
+                    className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4m-4-6l6 6m0 0l-6-6m6 6V5"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </motion.div>
           </div>
         </motion.div>
-      </div>
-    </motion.div>
 
-        {/* Contact Form */ }
-  <motion.div
-    initial={{ opacity: 0 }}
-    whileInView={{ opacity: 1 }}
-    transition={{ duration: 0.4 }}
-    viewport={{ once: true, amount: 0.2 }}
-  >
-    <h2 className="text-2xl font-bold text-gray-900 mb-8">Send a Message</h2>
-    <p className="text-gray-600 text-sm mb-6">
-      Fill out the form below and I'll get back to you as soon as possible.
-    </p>
-    <ContactForm />
-  </motion.div>
+        {/* Contact Form */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.4 }}
+          viewport={{ once: true, amount: 0.2 }}
+        >
+          <h2 className="text-2xl font-bold text-gray-900 mb-8">Send a Message</h2>
+          <p className="text-gray-600 text-sm mb-6">
+            Fill out the form below and I'll get back to you as soon as possible.
+          </p>
+          <ContactForm />
+        </motion.div>
       </div >
 
-    {/* FAQ Section */ }
-    < motion.section
-  className = "mt-20 pt-20 border-t border-gray-300"
-  initial = {{ opacity: 0 }
-}
-whileInView = {{ opacity: 1 }}
-transition = {{ duration: 0.4 }}
-viewport = {{ once: true, amount: 0.2 }}
+      {/* FAQ Section */}
+      <motion.section
+        className="mt-20 pt-20 border-t border-gray-300"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.4 }}
+        viewport={{ once: true, amount: 0.2 }}
       >
         <h2 className="text-2xl font-bold text-gray-900 mb-12 text-center">
           Quick Answers
