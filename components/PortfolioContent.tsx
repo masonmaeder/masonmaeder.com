@@ -77,7 +77,7 @@ export default function PortfolioContent() {
         transition={{ duration: 0.4, ease: "easeOut" }}
       >
         <h1 className="section-title">Portfolio</h1>
-        <p className="text-center text-gray-700 text-lg max-w-3xl mx-auto">
+        <p className="text-gray-700 text-lg max-w-3xl">
           A selection of projects showcasing my expertise in full-stack development,
           healthcare technology, distributed systems, and innovative solutions. Each
           project demonstrates my commitment to clean code, user experience, and
