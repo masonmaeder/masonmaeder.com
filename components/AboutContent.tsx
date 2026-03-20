@@ -17,27 +17,21 @@ export default function AboutContent() {
       >
         <div className="order-2 md:order-1">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Software Engineer & Curling Enthusiast
+            Software Developer
           </h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            I'm a passionate full-stack software engineer with a Bachelor of
-            Science in Computer Science. My journey in tech started with a
-            curiosity about how systems work, which led me to master modern
-            technologies including TypeScript, React, Next.js, and cloud
-            services. With over 5 years of professional experience, I've built
-            scalable, user-centric applications for startups and enterprise
-            clients.
+            I'm a software developer with a Bachelor of
+            Science in Computer Sciences and Information Science. My journey in tech started with a
+            curiosity about how systems work.
           </p>
           <p className="text-gray-700 mb-4 leading-relaxed">
             Beyond the code, I'm passionate about leadership and community
-            building. I've led student organizations, mentored junior developers,
-            and founded a curling club that has grown into a thriving community.
-            My competitive spirit led me to become a national champion curler,
-            consistently ranking among the top teams in national competitions.
+            building. I founded a curling club on campus that has grown into a community.
+            My competitive spirit led me to become a national champion curler, winning gold at collegiate curling nationals three years in a row.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            What drives me is creating impact—whether through innovative software
-            solutions or building strong teams around shared interests. I believe
+            What drives me is creating impact, whether through software
+            solutions or team building around shared interests. I believe
             the best results come from combining technical excellence with strong
             communication and leadership skills.
           </p>
@@ -74,13 +68,9 @@ export default function AboutContent() {
         transition={{ duration: 0.4 }}
         viewport={{ once: true, amount: 0.2 }}
       >
-        <h2 className="text-3xl font-bold text-gray-900 mb-8">Passion for Curling</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-8">Curling</h2>
         <p className="text-gray-700 text-lg mb-8">
-          Beyond software engineering, curling is my competitive outlet and
-          source of joy. I founded a local curling club and have dedicated myself
-          to the sport, earning recognition as a national champion. The sport has
-          taught me valuable lessons about strategy, teamwork, and precision—all
-          skills that translate directly to software development.
+          I curl! Beyond software development, curling is my competitive outlet. I founded a collegiate curling club, earning recognition as a national champion.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -107,7 +97,7 @@ export default function AboutContent() {
               Competitive Play
             </h3>
             <p className="text-gray-400 text-sm mt-1">
-              National champion and committed athlete
+              🥇 2024, 🥇 2025, 🥇 2026 College Curling National Champions
             </p>
           </div>
 
@@ -131,17 +121,17 @@ export default function AboutContent() {
               />
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mt-4">
-              Club Founder
+              Founder and President
             </h3>
             <p className="text-gray-400 text-sm mt-1">
-              Building community through sport
+              Representing the University of Wisconsin-Madison on the national level of competitive curling; and to instill in each of its members the values central to curling: integrity, teamwork, and self-betterment.
             </p>
           </div>
         </div>
       </motion.section>
 
       {/* Skills & Expertise */}
-      <motion.section
+      {/* <motion.section
         className="mb-16"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -202,7 +192,7 @@ export default function AboutContent() {
             </ul>
           </div>
         </div>
-      </motion.section>
+      </motion.section> */}
 
       {/* Education */}
       <motion.section
@@ -214,11 +204,48 @@ export default function AboutContent() {
       >
         <h2 className="text-3xl font-bold text-gray-900 mb-8">Education</h2>
         <div className="card">
-          <h3 className="text-xl font-semibold text-gray-900 mb-2">
-            Bachelor of Science in Computer Science
-          </h3>
-          <p className="text-accent mb-2">University Name</p>
-          <p className="text-gray-400">Graduated: 2020</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <h3 className="text-2xl font-semibold text-gray-900 mb-2">
+                Bachelor of Science: Computer Sciences, Information Science
+              </h3>
+              <p className="text-accent text-lg font-medium mb-4">
+                University of Wisconsin–Madison
+              </p>
+            </div>
+            <div className="flex flex-col justify-between">
+              <div>
+                <p className="text-gray-700 mb-2">
+                  <span className="text-accent font-semibold">Expected Graduation:</span> May
+                  2026
+                </p>
+                <p className="text-gray-700">
+                  <span className="text-accent font-semibold">Certificates:</span> Digital Studies, Game Design, Leadership
+                </p>
+              </div>
+              <div className="mt-6">
+                <p className="text-gray-600 text-sm mb-3 font-medium">
+                  Relevant Coursework:
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {[
+                    "Algorithms",
+                    "Artificial Intelligence (AI)",
+                    "Big Data Systems",
+                    "Database Design",
+                    "Operating Systems",
+                  ].map((course) => (
+                    <span
+                      key={course}
+                      className="px-3 py-1 text-xs bg-accent/10 text-accent rounded-full"
+                    >
+                      {course}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </motion.section>
 

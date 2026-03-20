@@ -217,7 +217,7 @@ export default function ExperienceContent() {
         transition={{ duration: 0.4 }}
         viewport={{ once: true, amount: 0.2 }}
       >
-        <h2 className="text-3xl font-bold text-gray-900 mb-8">Leaddership & Involvement</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-8">Leadership & Involvement</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <motion.div
             className="card hover:border-accent transition-colors duration-300"
