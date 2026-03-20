@@ -7,21 +7,23 @@ import ProjectCard from "@/components/ProjectCard";
 const featuredProjects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
+    title: "Adrenal Nodule Clinic Navigator",
     description:
-      "A full-stack e-commerce platform with real-time inventory management, payment processing, and admin dashboard.",
-    technologies: ["Next.js", "TypeScript", "PostgreSQL", "Stripe"],
+      "A patient-facing web application designed to help individuals understand and navigate the clinical process after an incidental adrenal nodule referral.",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL", "OpenAI API"],
     link: "/portfolio",
-    category: "Full Stack",
+    category: "Web App",
+    image: "/images/projects/navigator.png",
   },
   {
     id: 2,
-    title: "Task Management App",
+    title: "Finding Love in Chernobyl",
     description:
-      "Collaborative task management application with real-time updates, team collaboration features, and notifications.",
-    technologies: ["React", "Firebase", "Tailwind CSS", "Redux"],
+      "A narrative-driven dating simulator that explores intimacy, mortality, and choice under the pressure of impending doom.",
+    technologies: ["GameMaker"],
     link: "/portfolio",
-    category: "Frontend",
+    category: "PC Game",
+    image: "/images/projects/finding-love.png",
   },
 ];
 
@@ -41,9 +43,9 @@ export default function Home() {
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-4">
               Hi, I'm Mason Maeder
             </h1>
-            <p className="text-xl text-gray-700 mb-6">
+            {/* <p className="text-xl text-gray-700 mb-6">
               Software Engineer
-            </p>
+            </p> */}
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
               Senior Computer Science and Information Science student at UW-Madison seeking a full-time Software Engineer or Systems Programmer role upon graduation in May 2026.
             </p>
@@ -51,7 +53,7 @@ export default function Home() {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="/assets/resume.pdf"
+                href="/assets/Mason_Maeder_resume.pdf"
                 download
                 className="button-primary text-center"
               >
@@ -90,7 +92,7 @@ export default function Home() {
       </motion.section>
 
       {/* Stats Section */}
-      <motion.section
+      {/* <motion.section
         className="py-20 grid grid-cols-1 md:grid-cols-3 gap-8"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -109,7 +111,7 @@ export default function Home() {
           <div className="text-5xl font-bold text-accent mb-3">100%</div>
           <p className="text-gray-700 text-lg">Client Satisfaction</p>
         </div>
-      </motion.section>
+      </motion.section> */}
 
       {/* Featured Projects Section */}
       <motion.section
@@ -122,9 +124,8 @@ export default function Home() {
         <div className="mb-12">
           <h2 className="section-title">Featured Projects</h2>
           <p className="text-gray-700 text-lg">
-            Explore a selection of my recent work showcasing my expertise in
-            full-stack development, modern web technologies, and user-centered
-            design.
+            Explore a selection of my recent work showcasing my experience in
+            software development and user-centered design.
           </p>
         </div>
 
@@ -156,14 +157,36 @@ export default function Home() {
         <h2 className="section-title text-center mb-8">Tech Stack</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
-            "TypeScript",
-            "React",
-            "Next.js",
-            "Node.js",
-            "PostgreSQL",
-            "Tailwind CSS",
-            "AWS",
+            "Python",
+            "Java",
+            "C",
+            "Job Control Language (JCL)",
+            "REXX",
+            "z/OS (IBM Z Xplore - Advanced Certificate)",
+            "TSO/ISPF",
+            "Git",
+            "Operating Systems",
+            "SQL",
+            "YAML",
             "Docker",
+            "Kubernetes",
+            "Apache Airflow",
+            "Relational Databases",
+            "PostgreSQL",
+            "CloudNativePG",
+            "Artificial Intelligence (AI)",
+            "Elasticsearch",
+            "LLMs",
+            "FastAPI",
+            "Selenium",
+            "Linux",
+            "Data Structures",
+            "Algorithms",
+            "React",
+            "HTML",
+            "CSS",
+            "Microsoft Office",
+            "Microsoft Excel",
           ].map((skill) => (
             <div
               key={skill}

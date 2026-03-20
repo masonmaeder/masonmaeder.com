@@ -15,10 +15,9 @@ export default function ContactContent() {
       >
         <h1 className="section-title">Get In Touch</h1>
         <p className="text-gray-700 text-lg max-w-2xl">
-          I'm passionate about building impactful software solutions and exploring
+          I'm passionate about building impactful solutions and exploring
           new opportunities in technology. Whether you're interested in discussing a
-          project, collaborating on healthcare technology, or simply connecting—I'd
-          love to hear from you.
+          project, or simply connecting, I'd love to hear from you!
         </p>
       </motion.div>
 
@@ -64,7 +63,7 @@ export default function ContactContent() {
                 mason@masonmaeder.com
               </a>
               <p className="text-gray-600 text-sm mt-2">
-                I'll get back to you within 24 hours
+                I'll get back to you as soon as possible.
               </p>
             </motion.div>
 
@@ -98,9 +97,9 @@ export default function ContactContent() {
                 </svg>
                 Location
               </h3>
-              <p className="text-gray-300 text-lg">Madison, Wisconsin</p>
+              <p className="text-gray-700 text-lg">Madison, Wisconsin</p>
               <p className="text-gray-600 text-sm mt-2">
-                Based at UW-Madison, open to remote opportunities
+                Open to remote opportunities
               </p>
             </motion.div>
 
@@ -130,7 +129,7 @@ export default function ContactContent() {
               </h3>
               <div className="flex flex-col gap-3">
                 <a
-                  href="https://linkedin.com/in/masonmaeder"
+                  href="https://linkedin.com/in/mason-maeder"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-600 hover:text-accent transition-colors font-medium flex items-center gap-2 group"
@@ -214,12 +213,12 @@ export default function ContactContent() {
               What are you looking for?
             </h3>
             <p className="text-gray-600">
-              I'm interested in internships, full-time opportunities in software
-              engineering, healthcare technology, and collaborative projects that
-              make a real impact.
+              I'm interested in full-time opportunities in software
+              engineering, systems programming, and healthcare technology that
+              make an impact.
             </p>
           </motion.div>
-          <motion.div
+          {/* <motion.div
             className="card"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -250,7 +249,7 @@ export default function ContactContent() {
               discussing select projects or partnerships that align with my
               interests in healthcare tech and distributed systems.
             </p>
-          </motion.div>
+          </motion.div> */}
           <motion.div
             className="card"
             initial={{ opacity: 0 }}
@@ -262,8 +261,7 @@ export default function ContactContent() {
               Want to collaborate?
             </h3>
             <p className="text-gray-600">
-              Absolutely! I'm always excited about innovative projects. Whether it's
-              open-source contributions or academic collaborations, let's talk about
+              Absolutely! I'm always excited about new projects. Let's talk about
               how we can work together.
             </p>
           </motion.div>

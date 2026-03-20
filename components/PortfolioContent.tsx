@@ -9,62 +9,62 @@ const projects = [
     id: 1,
     title: "Adrenal Nodule Clinic Navigator",
     description:
-      "Web application designed to help clinicians manage and track adrenal nodule cases. Features patient data visualization, diagnostic guidelines, and decision support tools for clinical evaluation and follow-up protocols.",
-    technologies: ["React", "TypeScript", "Node.js", "PostgreSQL"],
-    link: "#",
+      "A patient-facing web application designed to help individuals understand and navigate the clinical process after an incidental adrenal nodule referral.",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL", "OpenAI API"],
+    link: "https://cs620.masonmaeder.com/",
     category: "Healthcare Tech",
-    image: "/images/projects/adrenal-nodule.jpg",
+    image: "/images/projects/navigator.png",
   },
   {
     id: 2,
-    title: "AI Healthcare Ethics Research",
+    title: "Finding Love in Chernobyl",
     description:
-      "Research platform exploring ethical implications of AI in clinical decision-making. Includes data collection tools, analysis dashboards, and visualization of bias patterns in medical AI systems.",
-    technologies: ["Next.js", "Python", "TensorFlow", "React"],
-    link: "#",
-    category: "Research",
-    image: "/images/projects/ai-ethics.jpg",
+      "A narrative-driven dating simulator that explores intimacy, mortality, and choice under the pressure of impending doom.",
+    technologies: ["GameMaker"],
+    link: "https://masonmaeder.itch.io/finding-love-in-chernobyl",
+    category: "PC Game",
+    image: "/images/projects/finding-love.png",
   },
-  {
-    id: 3,
-    title: "Distributed Systems & Big Data Project",
-    description:
-      "Large-scale distributed data processing system for analyzing medical datasets. Implements MapReduce patterns, data pipeline orchestration, and real-time metrics aggregation across multiple nodes.",
-    technologies: ["Apache Spark", "Hadoop", "Java", "Kafka"],
-    link: "#",
-    category: "Backend",
-    image: "/images/projects/distributed-systems.jpg",
-  },
-  {
-    id: 4,
-    title: "E-Commerce Platform",
-    description:
-      "Full-stack e-commerce platform with real-time inventory management, payment processing, and administrative dashboard for product and order management.",
-    technologies: ["Next.js", "TypeScript", "PostgreSQL", "Stripe"],
-    link: "#",
-    category: "Full Stack",
-    image: "/images/projects/ecommerce.jpg",
-  },
-  {
-    id: 5,
-    title: "Task Management Application",
-    description:
-      "Collaborative task management platform with real-time updates, team collaboration features, notifications, and project tracking capabilities.",
-    technologies: ["React", "Firebase", "Tailwind CSS", "Redux"],
-    link: "#",
-    category: "Frontend",
-    image: "/images/projects/task-manager.jpg",
-  },
-  {
-    id: 6,
-    title: "AI-Powered Chat Application",
-    description:
-      "Intelligent chat application powered by AI with conversation history, user preferences, context awareness, and natural language processing capabilities.",
-    technologies: ["Next.js", "OpenAI API", "TypeScript", "Tailwind"],
-    link: "#",
-    category: "Full Stack",
-    image: "/images/projects/ai-chat.jpg",
-  },
+  // {
+  //   id: 3,
+  //   title: "Distributed Systems & Big Data Project",
+  //   description:
+  //     "Large-scale distributed data processing system for analyzing medical datasets. Implements MapReduce patterns, data pipeline orchestration, and real-time metrics aggregation across multiple nodes.",
+  //   technologies: ["Apache Spark", "Hadoop", "Java", "Kafka"],
+  //   link: "#",
+  //   category: "Backend",
+  //   image: "/images/projects/distributed-systems.jpg",
+  // },
+  // {
+  //   id: 4,
+  //   title: "E-Commerce Platform",
+  //   description:
+  //     "Full-stack e-commerce platform with real-time inventory management, payment processing, and administrative dashboard for product and order management.",
+  //   technologies: ["Next.js", "TypeScript", "PostgreSQL", "Stripe"],
+  //   link: "#",
+  //   category: "Full Stack",
+  //   image: "/images/projects/ecommerce.jpg",
+  // },
+  // {
+  //   id: 5,
+  //   title: "Task Management Application",
+  //   description:
+  //     "Collaborative task management platform with real-time updates, team collaboration features, notifications, and project tracking capabilities.",
+  //   technologies: ["React", "Firebase", "Tailwind CSS", "Redux"],
+  //   link: "#",
+  //   category: "Frontend",
+  //   image: "/images/projects/task-manager.jpg",
+  // },
+  // {
+  //   id: 6,
+  //   title: "AI-Powered Chat Application",
+  //   description:
+  //     "Intelligent chat application powered by AI with conversation history, user preferences, context awareness, and natural language processing capabilities.",
+  //   technologies: ["Next.js", "OpenAI API", "TypeScript", "Tailwind"],
+  //   link: "#",
+  //   category: "Full Stack",
+  //   image: "/images/projects/ai-chat.jpg",
+  // },
 ];
 
 export default function PortfolioContent() {
@@ -111,12 +111,11 @@ export default function PortfolioContent() {
           Interested in Collaborating?
         </h2>
         <p className="text-gray-700 text-lg mb-8 max-w-2xl mx-auto">
-          I'm always excited to discuss new projects, technical challenges, and
-          opportunities to create impactful software solutions. Let's connect and
-          explore what we can build together.
+          I'm excited to discuss new projects, challenges, and
+          opportunities to create impactful solutions. Let's connect!
         </p>
         <Link href="/contact" className="button-primary">
-          Start a Project
+          Get In Touch
         </Link>
       </motion.section>
     </div>

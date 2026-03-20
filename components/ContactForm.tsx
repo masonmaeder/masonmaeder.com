@@ -14,6 +14,7 @@ export default function ContactForm() {
   const [submitStatus, setSubmitStatus] = useState<
     "idle" | "success" | "error"
   >("idle");
+  const [errorMessage, setErrorMessage] = useState<string>("");
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -29,13 +30,27 @@ export default function ContactForm() {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus("idle");
+    setErrorMessage("");
 
     try {
-      // Here you would typically send the form data to a backend API
-      // For now, we'll simulate a successful submission
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
-      console.log("Form submitted:", formData);
+      const data = await response.json();
+
+      if (!response.ok) {
+        const errorMsg = data.error || "Failed to send message";
+        console.error("API Error:", errorMsg);
+        setErrorMessage(errorMsg);
+        throw new Error(errorMsg);
+      }
+
+      console.log("Form submitted successfully!");
       setSubmitStatus("success");
       setFormData({ name: "", email: "", subject: "", message: "" });
 
@@ -177,7 +192,7 @@ export default function ContactForm() {
               />
             </svg>
             <p className="text-red-400 font-medium">
-              Oops! There was an error sending your message. Please try again.
+              {errorMessage || "Oops! There was an error sending your message. Please try again."}
             </p>
           </div>
         </div>
