@@ -10,9 +10,8 @@ export default function Footer() {
   ];
 
   const socialLinks = [
-    { name: "LinkedIn", href: "https://linkedin.com", target: "_blank" },
-    { name: "GitHub", href: "https://github.com", target: "_blank" },
-    { name: "Twitter", href: "https://twitter.com", target: "_blank" },
+    { name: "LinkedIn", href: "https://linkedin.com/in/mason-maeder", target: "_blank" },
+    { name: "GitHub", href: "https://github.com/masonmaeder", target: "_blank" },
   ];
 
   return (

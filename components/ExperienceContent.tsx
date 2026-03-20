@@ -69,10 +69,9 @@ export default function ExperienceContent() {
       >
         <h1 className="section-title">Experience</h1>
         <p className="text-gray-700 text-lg mb-8 max-w-2xl">
-          A passion for impact across technology, leadership, and community. My
-          experience spans healthcare informatics, retail operations, student
-          leadership, and entrepreneurship—all building toward my goal of creating
-          meaningful software solutions.
+          I have a passion for impact across technology, leadership, and community. My
+          experience spans healthcare informatics, retail management, mainframe development, and student
+          leadership.
         </p>
 
         {/* Resume Download Button */}
