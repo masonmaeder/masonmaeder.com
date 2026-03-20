@@ -22,10 +22,10 @@ export default function AboutContent() {
           <p className="text-gray-700 mb-4 leading-relaxed">
             I'm a software developer with a Bachelor of
             Science in Computer Sciences and Information Science. My journey in tech started with a
-            curiosity about how systems work.
+            curiosity about how things work.
           </p>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            Beyond the code, I'm passionate about leadership and community
+            I'm passionate about leadership and community
             building. I founded a curling club on campus that has grown into a community.
             My competitive spirit led me to become a national champion curler, winning gold at collegiate curling nationals three years in a row.
           </p>
@@ -76,7 +76,6 @@ export default function AboutContent() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Curling Image 1 */}
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-gray-500/10 rounded-lg"></div>
             <div className="relative bg-secondary rounded-lg h-64 border border-gray-300 flex items-center justify-center overflow-hidden">
               <img
                 src="/images/curling-action.jpg"
@@ -103,7 +102,6 @@ export default function AboutContent() {
 
           {/* Curling Image 2 */}
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-gray-500/10 rounded-lg"></div>
             <div className="relative bg-secondary rounded-lg h-64 border border-gray-300 flex items-center justify-center overflow-hidden">
               <img
                 src="/images/curling-team.jpg"
