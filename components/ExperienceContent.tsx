@@ -122,8 +122,7 @@ export default function ExperienceContent() {
               {/* Timeline dot */}
               <div className="hidden md:block absolute -left-14 top-6 w-5 h-5 bg-accent rounded-full border-4 border-primary shadow-lg shadow-accent/50 z-10"></div>
 
-              <div className={`card hover:shadow-lg hover:shadow-accent/20 transition-all duration-200 hover:border-accent ${exp.concurrent ? 'border-accent/30 bg-accent/5' : ''
-                }`}>
+              <div className="card hover:shadow-lg hover:shadow-accent/20 transition-all duration-200 hover:border-accent">
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3 mb-3">
                   <div>
                     <h3 className="text-xl font-bold text-gray-900">
@@ -137,11 +136,6 @@ export default function ExperienceContent() {
                     <p className="text-gray-600 font-medium whitespace-nowrap">
                       {exp.startDate} – {exp.endDate}
                     </p>
-                    {exp.concurrent && (
-                      <span className="px-2 py-1 text-xs bg-accent/10 text-accent rounded font-medium">
-                        Concurrent
-                      </span>
-                    )}
                   </div>
                 </div>
                 <ul className="text-gray-700 space-y-2 text-sm">
