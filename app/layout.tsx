@@ -4,15 +4,12 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Mason Maeder | Software Engineer",
+  title: "Mason Maeder",
   description:
-    "Full-stack software engineer passionate about building scalable applications",
+    "Software Developer",
   keywords: [
-    "software engineer",
-    "web developer",
-    "TypeScript",
-    "React",
-    "Next.js",
+    "software developer",
+    "Mason Maeder",
   ],
   viewport: "width=device-width, initial-scale=1",
 };
