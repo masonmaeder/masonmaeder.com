@@ -24,14 +24,8 @@ export default function AboutContent() {
             Science in Computer Sciences and Information Science. My journey in tech started with a
             curiosity about how things work.
           </p>
-          <p className="text-gray-700 mb-4 leading-relaxed">
-            I'm passionate about leadership and community
-            building. I founded a curling club on campus that has grown into a community.
-            My competitive spirit led me to become a national champion curler, winning gold at collegiate curling nationals three years in a row.
-          </p>
           <p className="text-gray-700 leading-relaxed">
-            What drives me is creating impact, whether through software
-            solutions or team building around shared interests. I believe
+            What drives me is creating impact. I believe
             the best results come from combining technical excellence with strong
             communication and leadership skills.
           </p>
