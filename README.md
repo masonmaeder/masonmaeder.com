@@ -17,7 +17,7 @@ A modern, responsive portfolio website built with Next.js, TypeScript, and Tailw
 - **Framework**: [Next.js 15](https://nextjs.org/) with App Router
 - **Language**: [TypeScript](https://www.typescriptlang.org/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **Deployment**: Static export compatible (GitHub Pages, Vercel, Netlify, etc.)
+- **Deployment**: Vercel with serverless API routes for contact form submissions
 
 ## Project Structure
 
@@ -163,15 +163,10 @@ npm install -g vercel
 vercel
 ```
 
-### Deploy to GitHub Pages
-1. Update `next.config.js` with your repository name
-2. Run `npm run build`
-3. Push the `out` directory to gh-pages branch
+Before deploying, set `RESEND_API_KEY` in your Vercel project environment variables so the contact form can send email in production.
 
-### Deploy to Netlify
-1. Connect your GitHub repository
-2. Set build command: `npm run build`
-3. Set publish directory: `out`
+### Other Hosts
+This project now requires a platform that supports Next.js serverless routes, such as Vercel.
 
 ## Browser Support
 
@@ -182,7 +177,7 @@ vercel
 
 ## Performance
 
-- Static site generation for optimal performance
+- Server-rendered and static pages for fast delivery
 - Optimized CSS with Tailwind purging
 - Mobile-first responsive design
 - Fast load times and smooth animations
