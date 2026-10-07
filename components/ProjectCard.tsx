@@ -6,6 +6,7 @@ interface Project {
   description: string;
   technologies: string[];
   link: string;
+  linkLabel?: string;
   category: string;
   image?: string;
 }
@@ -85,7 +86,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           href={project.link}
           className="text-accent font-semibold hover:text-gray-700 transition-all duration-200 flex items-center gap-2 group/link"
         >
-          View Project
+          {project.linkLabel ?? "View Project"}
           <svg
             className="w-4 h-4 group-hover/link:translate-x-1 transition-transform duration-200"
             fill="none"

@@ -11,7 +11,8 @@ const projects = [
     description:
       "A patient-facing web application designed to help individuals understand and navigate the clinical process after an incidental adrenal nodule referral.",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL", "OpenAI API"],
-    link: "https://cs620.masonmaeder.com/",
+    link: "https://navigator-demo.masonmaeder.com/",
+    linkLabel: "View Demo",
     category: "Healthcare Tech",
     image: "/images/projects/navigator.png",
   },
@@ -78,10 +79,7 @@ export default function PortfolioContent() {
       >
         <h1 className="section-title">Portfolio</h1>
         <p className="text-gray-700 text-lg max-w-3xl">
-          A selection of projects showcasing my expertise in full-stack development,
-          healthcare technology, distributed systems, and innovative solutions. Each
-          project demonstrates my commitment to clean code, user experience, and
-          solving real-world problems.
+          A selection of projects showcasing my expertise in full-stack development, healthcare technology, distributed systems, and innovative solutions. Each project demonstrates my commitment to clean code, user experience, and solving real-world problems.
         </p>
       </motion.div>
 

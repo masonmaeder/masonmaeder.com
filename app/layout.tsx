@@ -6,9 +6,9 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Mason Maeder",
   description:
-    "Software Developer",
+    "IT Professional",
   keywords: [
-    "software developer",
+    "it professional",
     "Mason Maeder",
   ],
   viewport: "width=device-width, initial-scale=1",

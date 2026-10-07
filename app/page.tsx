@@ -47,7 +47,7 @@ export default function Home() {
               Software Engineer
             </p> */}
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Senior Computer Science and Information Science student at UW-Madison seeking a full-time Software Engineer or Systems Programmer role upon graduation in May 2026.
+              I'm an IT Professional with a BS in Computer and Information Sciences from UW-Madison. I have experience spanning health informatics application development, enterprise mainframe systems, and automated data pipelines.
             </p>
 
             {/* CTA Buttons */}

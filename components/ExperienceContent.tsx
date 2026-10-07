@@ -93,7 +93,7 @@ export default function ExperienceContent() {
               d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10"
             />
           </svg> */}
-          Download Full Resume
+          Download Resume
         </a>
       </motion.div>
 
@@ -175,8 +175,7 @@ export default function ExperienceContent() {
             <div className="flex flex-col justify-between">
               <div>
                 <p className="text-gray-700 mb-2">
-                  <span className="text-accent font-semibold">Expected Graduation:</span> May
-                  2026
+                  <span className="text-accent font-semibold">Class of 2026</span>
                 </p>
                 <p className="text-gray-700">
                   <span className="text-accent font-semibold">Certificates:</span> Digital Studies, Game Design, Leadership
@@ -230,7 +229,7 @@ export default function ExperienceContent() {
             </h3>
             <p className="text-accent mb-2 font-medium">Curling Club of UW-Madison</p>
             <p className="text-gray-600 text-sm">
-              We won three consectuive National College Curling Championships in 2024, 2025, and 2026. As president, I provide coaching and skill development for 15+ students during weekly practices. I also handle all administrative duties, including managing a $13,000+ annual budget, scheduling events, and presenting to the Sport Club Council to secure funding.
+              We won three consecutive National College Curling Championships in 2024, 2025, and 2026. As president, I provided coaching and skill development for 15+ students during weekly practices. I also handled all administrative duties, including managing a $15,000+ annual budget, scheduling events, and presenting to the Sport Club Council to secure funding.
             </p>
           </motion.div>
           <motion.div
@@ -247,7 +246,7 @@ export default function ExperienceContent() {
               University Housing, UW-Madison
             </p>
             <p className="text-gray-600 text-sm">
-              I work closely with two others to manage a floor of 137 residents, fostering an inclusive and supportive community through regular events. We respond to medical emergencies, resolve roommate conflicts, and handle mental health concerns. We collaborate with university departments to organize events that enhance residents' academic, social, and personal development.
+              I worked closely with two others to manage a floor of 137 residents, fostering an inclusive and supportive community through regular events. We responded to medical emergencies, resolved roommate conflicts, and handled mental health concerns. We collaborated with university departments to organize events that enhance residents' academic, social, and personal development.
             </p>
           </motion.div>
           {/* <motion.div

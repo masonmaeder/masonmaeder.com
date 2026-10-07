@@ -17,10 +17,10 @@ export default function AboutContent() {
       >
         <div className="order-2 md:order-1">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Software Developer
+            IT Professional
           </h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            I'm a software developer with a Bachelor of
+            I'm a IT Professional with a Bachelor of
             Science in Computer Sciences and Information Science. My journey in tech started with a
             curiosity about how things work.
           </p>
@@ -64,7 +64,7 @@ export default function AboutContent() {
       >
         <h2 className="text-3xl font-bold text-gray-900 mb-8">Curling</h2>
         <p className="text-gray-700 text-lg mb-8">
-          I curl! Beyond software development, curling is my competitive outlet. I founded a collegiate curling club, earning recognition as a national champion.
+          I curl! Outside  of work, curling is my passion. I founded a collegiate curling club, earning recognition as a national champion.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -208,8 +208,7 @@ export default function AboutContent() {
             <div className="flex flex-col justify-between">
               <div>
                 <p className="text-gray-700 mb-2">
-                  <span className="text-accent font-semibold">Expected Graduation:</span> May
-                  2026
+                  <span className="text-accent font-semibold">Class of 2026</span>
                 </p>
                 <p className="text-gray-700">
                   <span className="text-accent font-semibold">Certificates:</span> Digital Studies, Game Design, Leadership

@@ -24,7 +24,7 @@ export default function Footer() {
               Mason Maeder
             </Link>
             <p className="text-gray-700 mt-2">
-              Software Developer
+              IT Professional
             </p>
           </div>
 
@@ -47,7 +47,7 @@ export default function Footer() {
 
           {/* Social Links */}
           <div>
-            <h3 className="text-gray-900 font-semibold mb-4">Follow</h3>
+            <h3 className="text-gray-900 font-semibold mb-4">Connect</h3>
             <ul className="space-y-2">
               {socialLinks.map((link) => (
                 <li key={link.href}>
@@ -69,6 +69,14 @@ export default function Footer() {
         <div className="border-t border-gray-300 pt-8">
           <p className="text-gray-700 text-center">
             © {currentYear} Mason Maeder. All rights reserved.
+            <a
+              href="https://github.com/masonmaeder/masonmaeder.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-1 underline hover:text-accent transition-colors"
+            >
+              Source
+            </a>
           </p>
         </div>
       </div>
