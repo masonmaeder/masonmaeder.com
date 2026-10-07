@@ -16,6 +16,8 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {
+  const isExternalLink = /^https?:\/\//.test(project.link);
+
   return (
     <motion.div
       className="card flex flex-col h-full group"
@@ -84,6 +86,9 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         {/* Link */}
         <a
           href={project.link}
+          {...(isExternalLink
+            ? { target: "_blank", rel: "noopener noreferrer" }
+            : {})}
           className="text-accent font-semibold hover:text-gray-700 transition-all duration-200 flex items-center gap-2 group/link"
         >
           {project.linkLabel ?? "View Project"}
