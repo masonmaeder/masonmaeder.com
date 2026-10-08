@@ -5,29 +5,46 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
+    id: 4,
+    company: "University of Wisconsin-Madison",
+    position: "Associate IT Professional – Job Rotation Program",
+    startDate: "July 2026",
+    endDate: "Present",
+    description: [
+      <a
+        href="https://hr.wisc.edu/job-rotation-program/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-accent underline hover:text-gray-900"
+      >
+        About the Job Rotation Program | UW-Madison
+      </a>,
+    ],
+  },
+  // {
+  //   id: 2,
+  //   company: "CVS Health",
+  //   position: "Operations Manager",
+  //   startDate: "May 2024",
+  //   endDate: "Present",
+  //   description: [
+  //     "Directly manage a team of 10 employees, overseeing operations including weekly scheduling, payroll, and performance management to optimize efficiency of shifts and improve the store's financial results",
+  //     "Optimize the customer-focused inventory replenishment process in a high-volume retail environment, implementing strategies to improve product availability and reduce overstock",
+  //     "Screen, interview, and select qualified candidates for store supervisory and pharmacy technician positions, contributing to developing a well-performing team",
+  //   ],
+  // },
+    {
     id: 1,
     company: "UW School of Medicine and Public Health",
     position: "Informatics Student Developer",
     startDate: "June 2023",
-    endDate: "Present",
+    endDate: "May 2026",
     description: [
       "Architected an agentic AI system using Atomic Agents and Instructor AI to translate natural language prompts into executable SQL queries, allowing non-technical research staff to directly and efficiently access clinical data stored in Delta Tables",
       "Built a Retrieval-Augmented Generation (RAG) pipeline by integrating Elasticsearch as a vector database, enabling the AI tool to provide context-aware responses through a FastAPI interface",
       "Migrated the Airflow database from a traditional Postgres cluster to CloudNativePG, enabling a more resilient backup and restore workflow using volume snapshots in preparation for a major system upgrade",
       "Developed a DeltaTable upsert task in Airflow by leveraging the KubernetesPodOperator to run workloads in custom Docker containers, improving deployment security and resource efficiency by restricting task environments to only access essential dependencies",
       "Developed a Python-based automation script with Selenium to streamline daily OnCore functions, increasing data accuracy by minimizing the risk of manual entry errors by clinical researchers",
-    ],
-  },
-  {
-    id: 2,
-    company: "CVS Health",
-    position: "Operations Manager",
-    startDate: "May 2024",
-    endDate: "Present",
-    description: [
-      "Directly manage a team of 10 employees, overseeing operations including weekly scheduling, payroll, and performance management to optimize efficiency of shifts and improve the store's financial results",
-      "Optimize the customer-focused inventory replenishment process in a high-volume retail environment, implementing strategies to improve product availability and reduce overstock",
-      "Screen, interview, and select qualified candidates for store supervisory and pharmacy technician positions, contributing to developing a well-performing team",
     ],
   },
   {
