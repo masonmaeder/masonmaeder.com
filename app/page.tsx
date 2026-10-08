@@ -54,7 +54,8 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="/assets/Mason_Maeder_resume.pdf"
-                download
+                target="_blank"
+                rel="noopener noreferrer"
                 className="button-primary text-center"
               >
                 Download My Resume

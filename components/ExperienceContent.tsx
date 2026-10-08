@@ -74,10 +74,11 @@ export default function ExperienceContent() {
           leadership.
         </p>
 
-        {/* Resume Download Button */}
+        {/* Resume PDF Button */}
         <a
           href="/assets/Mason_Maeder_resume.pdf"
-          download
+          target="_blank"
+          rel="noopener noreferrer"
           className="button-primary inline-flex items-center gap-2"
         >
           {/* <svg
